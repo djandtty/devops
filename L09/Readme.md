@@ -142,7 +142,19 @@ docker run --rm \
   alpine \
   sh -c "tar czf /backup/$(basename ${BACKUP_FILE}) -C /volume ."
 ```
+  
+  Как запускать:  
+Напрямую backend:  
+`curl http://localhost:3000/health`  
+`curl http://localhost:3000/hello`  
 
+Через NGINX:  
+`curl http://localhost/api/health`  
+`curl http://localhost/api/hello`  
+
+Через браузер:  
+`http://2.2.2.2/api/health`  
+`http://2.2.2.2/api/hello`  
 
 
 
